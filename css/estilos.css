@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0 auto;
+    padding: 22px 0;
+    width: 940px;
+    font-family: 'Nunito',sans-serif;
+}
+h1,h2{
+    font-size: 28px;
+    line-height: 44px;
+    padding: 22px 0;
+}
+h3{
+    font-size: 18px;
+    line-height: 22px;
+    padding: 11px 0;
+}
+p{
+    padding-bottom: 22px;
+}
+.titulo{
+    font-size: 50px;
+    color: #7e7468;
+    margin-top: 20px;
+    padding-left: 60px;
+    text-align: center;
+}
+.logo{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    float: left;
+}
+.logo:hover{
+    transform: scale(1.5);
+}
+nav{
+    margin-top: 50px;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    width: 100%;
+    background: green;
+    font-size: 18px;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.menu li a{
+    display: block;
+    padding: 15px 10px;
+    color: white;
+    text-decoration: none;
+}
+.menu li:hover{
+    background-color: black;
+}
+.submenu{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.479);
+}
+.menu li:hover .submenu{
+    display: block;
+}
+.submenu li:hover{
+    background-color: black;
+}
+.submenu li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 15px 15px 20px;
+}
+.baner{
+    position: relative;
+    left: 54px;
+    margin-top: 70px; 
+    padding: 20px;
+    width: 85%;
+    background-size: 100%;
+    border-radius: 22px;
+    box-shadow: 3px 3px 7px #0f9b0f;
+    background-image: url('../img/banner3.jpg');
+    height: 350px;
+}
+.baner h2{
+    margin: 25px;
+    color: #0f9b0f;
+}
+.baner p{
+    font-size: 22px;
+    margin: 25px;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
