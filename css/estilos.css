@@ -63,12 +63,15 @@ nav{
 .menu li:hover{
     background-color: black;
 }
+.menu li a:hover{
+    color: greenyellow;
+}
 .submenu{
     position: absolute;
     display: none;
     list-style: none;
     width: 200px;
-    background-color: rgba(0, 0, 0, 0.479);
+    background-color: rgba(0, 0, 0, 0.582);
 }
 .menu li:hover .submenu{
     display: block;
