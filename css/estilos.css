@@ -243,11 +243,11 @@ form input[type="submit"]{
 }
 footer{
     margin-top: 60px;
-    background-color: #474646;
+    background-color: rgb(20, 105, 20);
     position: absolute;
     width: 100%;
     left: 0;
-    padding-left: 80px;
+    padding-left: 120px;
     color: white;
     padding-top: 23px;
     padding-bottom: 28px;
@@ -275,7 +275,7 @@ footer section{
     display: block;
 }
 .pie_pag ul{
-    color: rgb(189, 189, 189);
+    color: white;
 }
 .sec3{
     position: relative;
@@ -288,7 +288,7 @@ footer section p{
     font-size: 18px;
 }
 .pie_pag section a{
-    color: rgb(189, 189, 189);
+    color: rgb(188, 201, 170);
 }
 .pie_pag section a:hover{
     color: white;
