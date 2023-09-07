@@ -243,7 +243,7 @@ form input[type="submit"]{
 }
 footer{
     margin-top: 60px;
-    background-color: rgb(20, 105, 20);
+    background-color:rgb(58, 58, 58);
     position: absolute;
     width: 100%;
     left: 0;
@@ -288,8 +288,11 @@ footer section p{
     font-size: 18px;
 }
 .pie_pag section a{
-    color: rgb(188, 201, 170);
+    color: rgb(146, 146, 146);
 }
 .pie_pag section a:hover{
     color: white;
+}
+section i{
+    font-size: 22px;
 }
