@@ -72,7 +72,7 @@ nav{
     display: none;
     list-style: none;
     width: 200px;
-    background-color: rgba(0, 0, 0, 0.582);
+    background-color: rgba(0, 0, 0, .5);
 }
 .menu li:hover .submenu{
     display: block;
@@ -275,7 +275,7 @@ footer section{
     display: block;
 }
 .pie_pag ul{
-    color: white;
+    color: rgb(182, 182, 182);
 }
 .sec3{
     position: relative;
@@ -288,11 +288,12 @@ footer section p{
     font-size: 18px;
 }
 .pie_pag section a{
-    color: rgb(146, 146, 146);
+    color: rgb(182, 182, 182);
 }
 .pie_pag section a:hover{
     color: white;
 }
 section i{
     font-size: 22px;
+    color: white;
 }

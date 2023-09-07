@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" href="../img/logo verde.png">
+    <link rel="stylesheet" href="../css/estiloshotel.css">
+    <title>Inicio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" onclick="seleccionar(this)">Blog</a>
+            <a href="#intro" onclick="seleccionar(this)" class="selected">Inicio</a>
+            <a href="#servicios" onclick="seleccionar(this)">Servicios</a>
+            <span><i><img src="../img/logo verde.png" alt="logo"></i></span>
+            <a href="#reservas" onclick="seleccionar(this)">Reservas</a>
+            <a href="#contactennos" onclick="seleccionar(this)">Contáctenos</a>
+            <a href="#registro" onclick="seleccionar(this)"></a>
+        </nav>
+    </header>
+    <section id="intro" class="bloque">
+        <div class="contenedor">
+            <h2>La mejor estancia en su viaje</h2>
+            <div class="formulario">
+                <form action="#servicios">
+                    <div>
+                        <h3>Iniciar sesión</h3>
+                    </div>
+                    <div class="info">
+                        <label for="">Usuario</label>
+                        <input type="text" name="" id="" class="usu">
+                    </div>
+                    <div class="info">
+                        <label for="">Contraseña</label>
+                        <input type="password" name="" id="">
+                    </div>
+                    <div class="info">
+                        <input type="submit" value="Enviar" class="btn_enviar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="servicios">
+        <div class="contenedor">
+            <div class="item_servicio1">
+                <div class="overlay"></div>
+                <a href="../hotel/"><h2>Piscina</h2></a>
+            </div>
+
+        </div>
+        <div class="item_servicio2">
+            <div class="overlay">
+                <a href=""><h2>Restaurante</h2></a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
