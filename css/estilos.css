@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,500&family=Kanit:wght@500&family=Montserrat:wght@400;600&family=Poppins:ital,wght@0,100;0,400;1,300&family=REM:wght@100;700;900&family=Ysabeau+Infant:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,500&family=Comfortaa:wght@700&family=Hind:wght@700&family=Josefin+Sans:wght@500&family=Kanit:wght@500&family=Montserrat:wght@400;600&family=Open+Sans:wght@700&family=Poppins:ital,wght@0,100;0,400;1,300&family=REM:wght@100;700;900&family=Ysabeau+Infant:wght@900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -28,7 +29,7 @@ p{
     font-size: 50px;
     color: #7e7468;
     margin-top: 20px;
-    padding-left: 60px;
+    padding-left: 70px;
     text-align: center;
 }
 .logo{
@@ -87,10 +88,10 @@ nav{
 }
 .baner{
     position: relative;
-    left: 54px;
+    left: 4px;
     margin-top: 70px; 
     padding: 20px;
-    width: 85%;
+    width: 95%;
     background-size: 100%;
     border-radius: 22px;
     box-shadow: 3px 3px 7px #0f9b0f;
@@ -98,8 +99,10 @@ nav{
     height: 350px;
 }
 .baner h2{
-    margin: 25px;
+    margin: 27px;
     color: #0f9b0f;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 29px;
 }
 .baner p{
     font-size: 22px;
@@ -108,4 +111,185 @@ nav{
     position: relative;
     z-index: 1;
     width: 100%;
+}
+.contenido{
+    display: table;
+}
+.contenedor{
+    display: table-cell;
+    width: 620px;
+    padding-right: 22px;
+}
+.contenedor2 p{
+    text-align: justify;
+}
+.contenedor2 header p,
+.contenedor2 header p a{
+    font-size: 16px;
+    color: #474646;
+}
+.contenedor2 header p a:hover{
+    text-decoration: none;
+    color: #000;
+}
+.contenedor2 div{
+    column-count: 2;
+    column-gap: 50px;
+}
+.contenenedor2 img{
+    margin: 22px 0;
+    box-shadow: 3px 3px 7px #777;
+    border-radius: 5px;
+}
+#comentarios{
+    margin-top: 21px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    border-top: 1px solid #d7d7d7;
+    width: 110%;
+    border-bottom: 1px solid #d7d7d7;
+}
+#comentarios article{
+    display: table;
+    padding: 22px;
+}
+#comentarios articles header{
+    display: table-cell;
+    width: 220px;
+    padding-right: 22px;
+}
+#comentarios article header a{
+    display: block;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+#comentarios article header a:hover{
+    text-decoration: underline;
+}
+#comentarios article p{
+    padding: 0;
+}
+#comentarios article:nth-child(odd) {
+    padding: 31px;
+    background: rgb(248, 255, 249);
+    border: 1px solid #d7d7d7;
+    border-radius: 11px;
+}
+aside section ul li{
+    list-style: none;
+}
+aside section ul li a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+aside section ul li a:hover{
+    color: rgb(0, 94, 0);
+}
+form{
+    margin-top: 21px;
+    padding-top: 22px;
+}
+form p{
+    display: table;
+    margin-bottom: 22px;
+    padding: 0 22px;
+}
+form label{
+    display: table-cell;
+    width: 140px;
+    padding-right: 20px;
+    font-weight: bold;
+    padding-bottom: 9px;
+    text-align: right;
+    vertical-align: top;
+}
+
+form input[type="text"],
+form input[type="email"]{
+    display: table-cell;
+    width: 300px;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid rgb(70, 64, 64);
+    height: 21px;
+}
+form textarea{
+    width: 300px;
+    border-radius: 3px;
+    height: 50px;
+    border: 1px solid rgb(70, 64, 64);
+    outline: none;
+}
+form textarea:focus{
+    border:1px solid rgb(0, 196, 0);
+}
+
+form p input:focus{
+    border: 1px solid rgb(0, 196, 0);
+}
+form input[type="submit"]{
+    background-color: rgb(37, 30, 30);
+    color: white;
+    width: 85px;
+    height: 34px;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+form input[type="submit"]{
+    margin-left: 184px;
+}
+footer{
+    margin-top: 60px;
+    background-color: #474646;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding-left: 80px;
+    color: white;
+    padding-top: 23px;
+    padding-bottom: 28px;
+    font-size: 18px;
+}
+footer section ul li a{
+    color: white;
+}
+footer .sec1 a{
+    color: white;
+}
+footer section a{
+    color: white;
+}
+footer section{
+    display: table-cell;
+    width: 300px;
+    position: relative;
+    padding-right: 100px;
+}
+.sec1{
+    text-align: justify;
+}
+.pie_pag ul li a {
+    display: block;
+}
+.pie_pag ul{
+    color: rgb(189, 189, 189);
+}
+.sec3{
+    position: relative;
+    right: 32px;
+}
+footer section h3{
+    font-size: 20px;
+}
+footer section p{
+    font-size: 18px;
+}
+.pie_pag section a{
+    color: rgb(189, 189, 189);
+}
+.pie_pag section a:hover{
+    color: white;
 }
