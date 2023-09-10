@@ -16,8 +16,8 @@
             <a href="#servicios" onclick="seleccionar(this)">Servicios</a>
             <span><i><img src="../img/logo verde.png" alt="logo"></i></span>
             <a href="#reservas" onclick="seleccionar(this)">Reservas</a>
-            <a href="#contactennos" onclick="seleccionar(this)">Contáctenos</a>
-            <a href="#registro" onclick="seleccionar(this)"></a>
+            <a href="#contactenos" onclick="seleccionar(this)">Contáctenos</a>
+            <a href="#registro" onclick="seleccionar(this)">Registro</a>
         </nav>
     </header>
     <section id="intro" class="bloque">
@@ -44,19 +44,146 @@
         </div>
     </section>
 
-    <section id="servicios" class="servicios">
+    <section id="servicios" class="bloque">
         <div class="contenedor">
             <div class="item_servicio1">
                 <div class="overlay"></div>
-                <a href="../hotel/"><h2>Piscina</h2></a>
+                <a href=""><h2>Piscina</h2></a>
             </div>
-
         </div>
         <div class="item_servicio2">
             <div class="overlay">
                 <a href=""><h2>Restaurante</h2></a>
             </div>
         </div>
+        <div class="item_servicio3">
+            <div class="overlay">
+                <a href=""><h2>Bar</h2></a>
+            </div>
+        </div>
+        <div class="item_servicio4">
+            <div class="overlay"></div>
+            <a href=""><h2>Spa</h2></a>
+        </div>
+        <div class="item_servicio5">
+            <div class="overlay">
+                <a href=""><h2>Servicio a la habitación</h2></a>
+            </div>
+        </div>
+    
+    </section>
+
+    <section id="reservas" class="bloque">
+        <div class="contenedor">
+            <div>
+                <h2>¿Desea reservar?</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cupiditate magni consectetur laboriosam cum, quos excepturi ducimus. Quaerat sint earum laborum. Maiores blanditiis voluptatibus libero voluptatem laborum? Nemo, repudiandae expedita.
+                            
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cupiditate magni consectetur laboriosam cum, quos excepturi ducimus. Quaerat sint earum laborum. Maiores blanditiis voluptatibus libero voluptatem laborum? Nemo, repudiandae expedita.
+                
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cupiditate magni consectetur laboriosam cum, quos excepturi ducimus. Quaerat sint earum laborum. Maiores blanditiis voluptatibus libero voluptatem laborum? Nemo, repudiandae expedita.
+            </p>
+            <div class="item_clausulas">
+                <div class="overlay"></div>
+                <a href=""><h2>Clausulas</h2></a>
+            </div>
+
+            <div class="item_condiciones">
+                <div class="overlay"></div>
+                    <a href="../paginas/servicios/piscina.html"><h2>Condiciones</h2></a>
+                </div>
+            
+
+            <div class="condiciciones_de_pago">
+                <div class="overlay"></div>
+                <a href="../paginas/servicios/piscina.html"><h2>Condiciones de pago</h2></a>
+            </div>
+
+            <div class="item_reserva">
+                <div class="overlay"></div>
+                <a href="../paginas/servicios/piscina.html"><h2>Reserva</h2></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contactenos" class="bloque">
+        <div class="contenedor">
+            <div class="datos">
+                <div class="item">
+                    <i class="fa-sharp fa-solid fa-location-dot"></i>
+                    <div class="datos_dir">
+                        <h2>Direccion</h2>
+                        <h3>Calle 13#10 Soacha Cundinamarca</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="datos_dir">
+                    <h2>Email</h2>
+                    <h3>hotelsena12@sena.edu.co</h3>
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="datos_dir">
+                    <h2>Teléfono</h2>
+                    <h3>7895201</h3>
+                </div>
+                <div class="item">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <div class="datos_dir">
+                    <h2>Whatsapp</h2>
+                    <h3>30215454</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="formulario">
+            <form action="#intro">
+                <div>
+                    <h3>Iniciar sesión</h3>
+                </div>
+                <div class="info">
+                    <label for="">Nombres</label>
+                    <input type="text" name="" id="">
+                </div>
+                <div class="info">
+                    <label for="">Apellidos</label>
+                    <input type="text" name="" id="">
+                </div>
+                <div class="info">
+                    <label for="">Teléfono</label>
+                    <input type="tel" name="" id="">
+                </div>
+                <div class="info">
+                    <label for="">Mensaje</label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="info">
+                    <input type="submit" value="Enviar" class="btn_enviar">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="registro" class="bloque">
+        <label for="">Nombres</label>
+        <input type="text">
+        <label for="">Apellidos</label>
+        <input type="text" name="" id="">
+        <label for="">Tipo de documento</label>
+        <select name="" id="">
+            <option value="">Cédula de ciudadanía</option>
+            <option value="">Cédula de extranjería</option>
+            <option value="">Pasaporte</option>
+        </select>
+        <label for="">Email</label>
+        <input type="email" name="" id="">
+        <label for="">Contraseña</label>
+        <input type="password" name="" id="">
+        <input type="submit" value="Enviar">
     </section>
 </body>
 </html>
