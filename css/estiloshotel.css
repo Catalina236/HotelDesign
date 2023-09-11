@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@700&family=Victor+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Raleway',sans-serif;
 }
 body{
     display: flex;
@@ -23,18 +26,31 @@ header{
     bottom: 0;
     padding: 10px 0;
     width: 100%;
-    background-image: linear-gradient(to right,purple,dodgerblue,green);
+    background-image: linear-gradient(to right,blue,rgb(0, 128, 107),rgb(89, 0, 206));
     text-align: center;
-    font-family: 'Raleway',sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
     font-weight: bold;
+}
+span i img{
+    width: 76px;
 }
 form{
     margin-left: 23px;
 }
-.formulario{
+#intro{
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/Inicio.jpg');
+}
+#intro .formulario{
     display: table;
-    background-color: rgba(255, 255, 255, 0.719);
+    background-color: rgba(0, 0, 0, 0.555);
     width: 400px;
+    margin-left: 700px;
+    color: white;
 }
 .formulario h3{
     font-weight: bold;
@@ -70,11 +86,13 @@ label{
     font-family: 'Raleway',sans-serif;
     font-size: 16px;
     font-weight: bold;
-    background-color: rgb(193, 255, 234);
+    background-color:green;
+    color: white;
     margin-bottom: 12px;
+    border: none;
 }
 .formulario .info input[type="submit"]:hover{
-    background-color: aquamarine;
+    background-color: darkblue;
 }
 a{
     display: inline-block;
@@ -84,23 +102,16 @@ a{
     padding: 10px;
     border-radius: 10px;
 }
-#intro{
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('../img/Inicio.jpg');
-}
 
 #intro .contenedor h2{
     font-size: 4rem;
     text-align: center;
     color: white;
-    text-shadow: 3px 3px 3px 10px rgb(54,39,39);
+    text-shadow: 3px 3px 10px rgb(24, 23, 23);
     position: relative;
     animation: 3s aparecer forwards;
     padding-bottom: 80px;
-    font-family: 'Josefin Sans',sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 @keyframes aparecer{
     0%{
@@ -128,103 +139,281 @@ h3{
     width: 50%;
     margin-left: 25px;
 }
-#servicios{
+/*#servicios{
     background-size: cover;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
+    background-image: url('../img/piscina1.jpg');
+    background: linear-gradient(transparent,black), url('../img/piscina1.jpg');
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}*/
+#servicios {
+    background: linear-gradient(transparent, black), url(../img/2piscina.jpg);
+    background-size: cover;
+}
+#servicios h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#servicios .contenedor {
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#servicios .servicio1 {
+    background-image: url(../img/piscina.jpg);
+}
+
+#servicios .servicio2 {
+    background-image: url(../img/restaurant.jpeg);
+}
+#servicios  .servicio3 {
+    background-image: url(../img/bar.jpg);
+}
+
+#servicios .servicio4 {
+    background-image: url(../img/spa.jpg);
+}
+#servicios  .servicio5 {
+    background-image: url(../img/roomservice.jpeg);
+}
+#servicios .item {
+    width: 25%; /*el contenedor item pasa de 25% ancho con hover a 90% de ancho*/
+    height: 400px;
+    background-size: cover;
+    background-position: center center;
+    margin: 0 10px;
+    transition: .7s;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+#servicios .item:hover {
+    width: 50%;
+}
+#servicios  .overlay {
+    position: absolute;
+    background: linear-gradient(to bottom, transparent 80%, black);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#servicios .item .titulo {
+    position: absolute;
+    bottom: -10px;
+    letter-spacing: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #e7e7dd;
+    font-style: 20px;
+    background-color: black;
+    padding: 10px 0;
+    width: 100%;
+    opacity: 0;
+    transition: .3s;
+}
+#servicios .item:hover .titulo {
+    bottom: -20px;
+    opacity: 1;
+}
+
+#reservas {
+    background: linear-gradient(transparent, black), url(../img/reservaimg.jpg);
+    background-size: cover;
+    color: white;
+}
+ 
+ #reservas h2 {
+     text-align: center;
+     margin-bottom: 20px;
+ }
+ #reservas .contenedor .tituloprincipal {
+    position: relative;
+    bottom: 56px;
+    display: flex;
+    white-space: nowrap; /* Evita el salto de línea */
+    overflow: hidden; 
+    top: 5px;
+ }
+#reservas .contenedor p{
+    position: relative;
+    right: 180px;
+    top: 55px;
+}
+ #reservas .contenedor {
+     max-width: 90%;
+     margin: 64px;
+     display: flex;
+     justify-content: space-between;
+ }
+ 
+ #reservas .clausulas {
+     background-image: url(../img/clausulas1.jpg);
+ }
+ 
+ #reservas .condiciones {
+     background-image: url(../img/condiciones.jpg);
+ }
+ #reservas  .condiciones_de_pago{
+    background-image: url(../img/condicionespago.jpg);
+}
+
+#reservas .reserva{
+    background-image: url(../img/reservab.png);
+}
+#reservas .item {
+    width: 100%; /*el contenedor item pasa de 25% ancho con hover a 90% de ancho*/
+    height: 400px;
+    background-size: cover;
+    background-position: center center;
+    margin: 0 10px;
+    transition: .7s;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+#reservas .item:hover {
+    width: 155%;
+}
+
+#reservas  .overlay {
+    position: absolute;
+    background: linear-gradient(to bottom, transparent 80%, black);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#reservas .item .titulo {
+    position: absolute;
+    bottom: -10px;
+    letter-spacing: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #e7e7dd;
+    font-style: 20px;
+    background-color: black;
+    padding: 10px 0;
+    width: 100%;
+    opacity: 0;
+    transition: .3s;
+    font-size: 17px;
+}
+
+#reservas .item:hover .titulo {
+    bottom: -20px;
+    opacity: 1;
+}
+#contactenos{
+    background: linear-gradient(transparent,black), url('../img/contacto.jpg');
+    background-size: cover;
+    color: white;
+}
+#contactenos .contenedor{
+    max-width: 95%;
+    display: flex;
+    margin: 99px 89px;
+    justify-content: space-between;
+    /*padding-top: 12px;*/
+}
+#contactenos .formulario{
+    width: 35%;
+    background-color: rgba(255, 255, 255, 0.747);
+    color: black;
+    margin: -390px 700px;
+    border-radius: 1px;
+}
+/*#contactenos .formulario .formtitulo{
+    margin-top: 20px;
+}*/
+#contactenos .datos{
+    display: grid;
+    gap: 30px;
+}
+#contactenos .item{
+    display: flex;
     align-items: center;
-    background-image: url('../img/Hotel_piscina.jpg');
-    font-family: 'Josefin Sans';
+}
+.formulario .formtitulo h3{
+    margin-top: 43px;
+}
+.item i{
+    margin-right: 23px;
+}
+#contactenos .info .btn_enviar{
+    width: 380px;
+    margin: 20px 0;
+    background-color:darkblue;
+    color: white;
+}
+#contactenos .formulario input[type="text"],
+input[type="tel"],textarea{
+    margin-top: 5px;
+    width: 380px;
+    padding: 5px;
+    border-radius: 3px;
+    margin-bottom: -3px;
+    border: 2px solid darkblue;
+}
+#registro{
+    background: linear-gradient(transparent,rgba(0, 0, 0, 0.712)),url('../img/registro.jpg');
+}
+#registro .formulario{
+    background-color: rgba(0, 0, 0, 0.555);
+    color: white;
+    width: 35%;
+    margin: 50px 450px;
+}
+#registro .formulario h2{
+    text-align: center;
+    margin-bottom: 12px;
+}
+#registro .formulario label{
     font-weight: bold;
+    margin-left: 24px;
 }
-.item_servicio1{
-    height: 900px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('../img/2piscina.jpg');  
-    border: 1px solid black;
+#registro .formulario input{
+    padding: 5px;
+    width: 87%;
+    margin-left: 23px;
+    margin-bottom: 12px;
+    outline: none;
+    border-radius: 5px;
 }
-.item_servicio1:hover{
-    width: 300px;
+#registro .formulario input[type="submit"]{
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 13px;
+    margin-bottom: 13px;
     cursor: pointer;
+    padding: 8px;
 }
-.item_servicio2{
-    height: 900px;
-    display: flex;
-    width: 150px;
-    justify-content: center;
-    align-items: center;
-    background-image: url('../img/restaurant.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 1px solid black;
+#registro .formulario input[type="submit"]:hover{
+    background-color: darkblue;
+    
 }
-.item_servicio2:hover{
-    width: 300px;
-    cursor: pointer;
+#registro .formulario select{
+    margin-left: 23px;
+    width: 87%;
+    padding: 4px;
+    font-size: 15px;
+    border-radius: 5px;
 }
-.item_servicio3{
-    height: 900px;
-    width: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('../img/bar1.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 1px solid black;
+#registro .formulario input:focus{
+    border: 2px solid darkcyan;
+    outline: none;
 }
-.item_servicio3:hover{
-    width: 300px;
-    cursor: pointer;
-}
-.item_servicio4{
-    height: 900px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('../img/spa4.jpg');
-    width: 150px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 1px solid black;
-}
-.item_servicio4:hover{
-    width: 300px;
-    cursor: pointer;
-}
-.item_servicio5{
-    height: 900px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('../img/serviciohab.jpg');
-    width: 150px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 1px solid black;
-}
-.item_servicio5:hover{
-    width: 300px;
-    cursor: pointer;
-}
-#reservas{
-    font-family: 'Josefin Sans';
-    font-size: 20px;
-    padding: 65px;
-    background-image: url('../img/recepcion.jpg');
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-}
-.item_clausulas{
-    background-image: url('../img/clausulas.jpg');
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-    width: 300px;
-    background-repeat: no-repeat;
-    background-size: cover;
+#registro .formulario select:focus{
+    border: 2px solid darkcyan;
+    outline: none;
 }

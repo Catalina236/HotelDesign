@@ -46,37 +46,37 @@
 
     <section id="servicios" class="bloque">
         <div class="contenedor">
-            <div class="item_servicio1">
+            <div class="item servicio1">
                 <div class="overlay"></div>
-                <a href=""><h2>Piscina</h2></a>
+                <a href=""><h2 class="titulo">Piscina</h2></a>
             </div>
-        </div>
-        <div class="item_servicio2">
+        <div class="item servicio2">
             <div class="overlay">
-                <a href=""><h2>Restaurante</h2></a>
+                <a href=""><h2 class="titulo">Restaurante</h2></a>
             </div>
         </div>
-        <div class="item_servicio3">
+        <div class="item servicio3">
             <div class="overlay">
-                <a href=""><h2>Bar</h2></a>
+                <a href=""><h2 class="titulo">Bar</h2></a>
             </div>
         </div>
-        <div class="item_servicio4">
+        <div class="item servicio4">
             <div class="overlay"></div>
-            <a href=""><h2>Spa</h2></a>
+            <a href=""><h2 class="titulo">Spa</h2></a>
         </div>
-        <div class="item_servicio5">
+        <div class="item servicio5">
             <div class="overlay">
-                <a href=""><h2>Servicio a la habitación</h2></a>
+                <a href=""><h2 class="titulo">Servicio a la habitación</h2></a>
             </div>
         </div>
+    </div>
     
     </section>
 
     <section id="reservas" class="bloque">
         <div class="contenedor">
             <div>
-                <h2>¿Desea reservar?</h2>
+                <h2 class="tituloprincipal">¿Desea reservar?</h2>
             </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cupiditate magni consectetur laboriosam cum, quos excepturi ducimus. Quaerat sint earum laborum. Maiores blanditiis voluptatibus libero voluptatem laborum? Nemo, repudiandae expedita.
                             
@@ -84,25 +84,25 @@
                 
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cupiditate magni consectetur laboriosam cum, quos excepturi ducimus. Quaerat sint earum laborum. Maiores blanditiis voluptatibus libero voluptatem laborum? Nemo, repudiandae expedita.
             </p>
-            <div class="item_clausulas">
+            <div class="item clausulas">
                 <div class="overlay"></div>
-                <a href=""><h2>Clausulas</h2></a>
+                <a href=""><h2 class="titulo">Clausulas</h2></a>
             </div>
 
-            <div class="item_condiciones">
+            <div class="item condiciones">
                 <div class="overlay"></div>
-                    <a href="../paginas/servicios/piscina.html"><h2>Condiciones</h2></a>
+                    <a href="../paginas/servicios/piscina.html"><h2 class="titulo">Condiciones</h2></a>
                 </div>
             
 
-            <div class="condiciciones_de_pago">
+            <div class="item condiciones_de_pago">
                 <div class="overlay"></div>
-                <a href="../paginas/servicios/piscina.html"><h2>Condiciones de pago</h2></a>
+                <a href="../paginas/servicios/piscina.html"><h2 class="titulo">Condiciones de pago</h2></a>
             </div>
 
-            <div class="item_reserva">
+            <div class="item reserva">
                 <div class="overlay"></div>
-                <a href="../paginas/servicios/piscina.html"><h2>Reserva</h2></a>
+                <a href="../paginas/servicios/piscina.html"><h2 class="titulo">Reserva</h2></a>
             </div>
         </div>
     </section>
@@ -117,19 +117,20 @@
                         <h3>Calle 13#10 Soacha Cundinamarca</h3>
                     </div>
                 </div>
+
                 <div class="item">
-                    <i class="fa-solid fa-phone"></i>
-                </div>
-                <div class="datos_dir">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div class="datos_dir">
                     <h2>Email</h2>
                     <h3>hotelsena12@sena.edu.co</h3>
                 </div>
+            </div>
                 <div class="item">
-                    <i class="fa-solid fa-envelope"></i>
-                </div>
-                <div class="datos_dir">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="datos_dir">
                     <h2>Teléfono</h2>
                     <h3>7895201</h3>
+                </div>
                 </div>
                 <div class="item">
                     <i class="fa-brands fa-whatsapp"></i>
@@ -143,7 +144,7 @@
         <div class="formulario">
             <form action="#intro">
                 <div>
-                    <h3>Iniciar sesión</h3>
+                    <h3 class="formtitulo">Iniciar sesión</h3>
                 </div>
                 <div class="info">
                     <label for="">Nombres</label>
@@ -159,7 +160,7 @@
                 </div>
                 <div class="info">
                     <label for="">Mensaje</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <textarea name="" id="" cols="30" rows=""></textarea>
                 </div>
                 <div class="info">
                     <input type="submit" value="Enviar" class="btn_enviar">
@@ -169,6 +170,8 @@
     </section>
 
     <section id="registro" class="bloque">
+        <form action="" class="formulario">
+        <h2>Regístrate</h2>
         <label for="">Nombres</label>
         <input type="text">
         <label for="">Apellidos</label>
@@ -184,6 +187,7 @@
         <label for="">Contraseña</label>
         <input type="password" name="" id="">
         <input type="submit" value="Enviar">
+        </form>
     </section>
 </body>
 </html>
